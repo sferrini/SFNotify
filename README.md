@@ -38,10 +38,8 @@ Import ```SFNotify.h```
 Screen
 --------------------
 
-DEFAULT:
 ![Demo DEFAULT](https://raw.github.com/sferrini/SFNotify/master/Demo/Demo/Screen/DEFAULT.gif)
 
-CUSTOM:
 ![Demo DIRECTION_BOTTOM_TO_TOP](https://raw.github.com/sferrini/SFNotify/master/Demo/Demo/Screen/DIRECTION_BOTTOM_TO_TOP.gif)
 
 ![Demo DIRECTION_LEFT_TO_RIGHT](https://raw.github.com/sferrini/SFNotify/master/Demo/Demo/Screen/DIRECTION_LEFT_TO_RIGHT.gif)
