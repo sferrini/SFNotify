@@ -37,8 +37,8 @@
 //    [self.view notify:@"This is the custom:\nSFNotify\n\nFeel free to modify whatever you want"
 //        withDirection:DIRECTION_LEFT_TO_RIGHT  //Custom direction
 //  withBackgroundColor:[UIColor blackColor] //Custom notify background color
-//             withFont:[UIFont systemFontOfSize:18] //Custom font
-//        withTextColor:[UIColor colorWithRed:1 green:.98 blue:0.09 alpha:1] //Custom font color
+//             withFont:[UIFont fontWithName:@"menlo" size:12] //Custom font
+//        withTextColor:[UIColor whiteColor] //Custom font color
 //         withDuration:4.0]; //Custom duration
 }
 

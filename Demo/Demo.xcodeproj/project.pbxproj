@@ -23,6 +23,9 @@
 		FC1FC03B18BBA15F004FB746 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1FC03A18BBA15F004FB746 /* DemoTests.m */; };
 		FC1FC04818BBA328004FB746 /* SFNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1FC04618BBA328004FB746 /* SFNotify.m */; };
 		FC1FC04918BBA328004FB746 /* SFNotifySettings in Resources */ = {isa = PBXBuildFile; fileRef = FC1FC04718BBA328004FB746 /* SFNotifySettings */; };
+		FCAD426818BBD2BD00863825 /* DEFAULT.gif in Resources */ = {isa = PBXBuildFile; fileRef = FCAD426518BBD2BD00863825 /* DEFAULT.gif */; };
+		FCAD426918BBD2BD00863825 /* DIRECTION_BOTTOM_TO_TOP.gif in Resources */ = {isa = PBXBuildFile; fileRef = FCAD426618BBD2BD00863825 /* DIRECTION_BOTTOM_TO_TOP.gif */; };
+		FCAD426A18BBD2BD00863825 /* DIRECTION_LEFT_TO_RIGHT.gif in Resources */ = {isa = PBXBuildFile; fileRef = FCAD426718BBD2BD00863825 /* DIRECTION_LEFT_TO_RIGHT.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		FC1FC04518BBA328004FB746 /* SFNotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNotify.h; sourceTree = "<group>"; };
 		FC1FC04618BBA328004FB746 /* SFNotify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNotify.m; sourceTree = "<group>"; };
 		FC1FC04718BBA328004FB746 /* SFNotifySettings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SFNotifySettings; sourceTree = "<group>"; };
+		FCAD426518BBD2BD00863825 /* DEFAULT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DEFAULT.gif; sourceTree = "<group>"; };
+		FCAD426618BBD2BD00863825 /* DIRECTION_BOTTOM_TO_TOP.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DIRECTION_BOTTOM_TO_TOP.gif; sourceTree = "<group>"; };
+		FCAD426718BBD2BD00863825 /* DIRECTION_LEFT_TO_RIGHT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DIRECTION_LEFT_TO_RIGHT.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 				FC1FC02418BBA15F004FB746 /* ViewController.h */,
 				FC1FC02518BBA15F004FB746 /* ViewController.m */,
 				FC1FC02718BBA15F004FB746 /* Images.xcassets */,
+				FCAD426418BBD2BD00863825 /* Screen */,
 				FC1FC01618BBA15F004FB746 /* Supporting Files */,
 			);
 			path = Demo;
@@ -167,6 +174,16 @@
 			);
 			name = SFNotify;
 			path = ../../SFNotify;
+			sourceTree = "<group>";
+		};
+		FCAD426418BBD2BD00863825 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD426518BBD2BD00863825 /* DEFAULT.gif */,
+				FCAD426618BBD2BD00863825 /* DIRECTION_BOTTOM_TO_TOP.gif */,
+				FCAD426718BBD2BD00863825 /* DIRECTION_LEFT_TO_RIGHT.gif */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +262,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAD426A18BBD2BD00863825 /* DIRECTION_LEFT_TO_RIGHT.gif in Resources */,
 				FC1FC02818BBA15F004FB746 /* Images.xcassets in Resources */,
 				FC1FC01A18BBA15F004FB746 /* InfoPlist.strings in Resources */,
+				FCAD426918BBD2BD00863825 /* DIRECTION_BOTTOM_TO_TOP.gif in Resources */,
 				FC1FC02318BBA15F004FB746 /* Main.storyboard in Resources */,
+				FCAD426818BBD2BD00863825 /* DEFAULT.gif in Resources */,
 				FC1FC04918BBA328004FB746 /* SFNotifySettings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
