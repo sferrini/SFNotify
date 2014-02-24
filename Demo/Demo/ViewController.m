@@ -35,7 +35,7 @@
     
 #warning - Use this to create a custom notify:
 //    [self.view notify:@"This is the custom:\nSFNotify\n\nFeel free to modify whatever you want"
-//        withDirection:DIRECTION_BOTTOM_TO_TOP  //Custom direction
+//        withDirection:DIRECTION_LEFT_TO_RIGHT  //Custom direction
 //  withBackgroundColor:[UIColor blackColor] //Custom notify background color
 //             withFont:[UIFont systemFontOfSize:18] //Custom font
 //        withTextColor:[UIColor colorWithRed:1 green:.98 blue:0.09 alpha:1] //Custom font color

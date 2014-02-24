@@ -9,6 +9,7 @@
 #import "SFNotify.h"
 
 float heightNotify;
+float widthNotify;
 
 @implementation UIView (SFNotify)
 
@@ -41,6 +42,14 @@ float heightNotify;
         case DIRECTION_BOTTOM_TO_TOP:
         {
             [self slideInNotify_DIRECTION_BOTTOM_TO_TOP:notify withDuration:duration];
+        }break;
+        case DIRECTION_LEFT_TO_RIGHT:
+        {
+            [self slideInNotify_DIRECTION_LEFT_TO_RIGHT:notify withDuration:duration];
+        }break;
+        case DIRECTION_RIGHT_TO_LEFT:
+        {
+            [self slideInNotify_DIRECTION_RIGHT_TO_LEFT:notify withDuration:duration];
         }break;
         default:
         {
@@ -88,6 +97,48 @@ float heightNotify;
                      }];
 }
 
+- (void)slideInNotify_DIRECTION_LEFT_TO_RIGHT:(UIView*)notify withDuration:(float)duration
+{
+    heightNotify = notify.frame.size.height;
+    widthNotify = notify.frame.size.width;
+    
+    [notify setFrame:CGRectMake(- widthNotify , 0 , notify.frame.size.width, notify.frame.size.height)];
+    [self addSubview:notify];
+    
+    [UIView animateWithDuration:1
+                     animations:^{
+                         [notify setFrame:CGRectMake(0, 0, notify.frame.size.width, notify.frame.size.height)];
+                     }
+                     completion:^(BOOL finished){
+                         [NSTimer scheduledTimerWithTimeInterval:duration
+                                                          target:self
+                                                        selector:@selector(hideNotify_DIRECTION_LEFT_TO_RIGHT:)
+                                                        userInfo:notify
+                                                         repeats:NO];
+                     }];
+}
+
+- (void)slideInNotify_DIRECTION_RIGHT_TO_LEFT:(UIView*)notify withDuration:(float)duration
+{
+    heightNotify = notify.frame.size.height;
+    widthNotify = notify.frame.size.width;
+    
+    [notify setFrame:CGRectMake(self.frame.size.width + widthNotify , 0 , notify.frame.size.width, notify.frame.size.height)];
+    [self addSubview:notify];
+    
+    [UIView animateWithDuration:1
+                     animations:^{
+                         [notify setFrame:CGRectMake(0, 0, notify.frame.size.width, notify.frame.size.height)];
+                     }
+                     completion:^(BOOL finished){
+                         [NSTimer scheduledTimerWithTimeInterval:duration
+                                                          target:self
+                                                        selector:@selector(hideNotify_DIRECTION_RIGHT_TO_LEFT:)
+                                                        userInfo:notify
+                                                         repeats:NO];
+                     }];
+}
+
 #pragma mark - Slide out
 - (void)hideNotify_DIRECTION_TOP_TO_BOTTOM:(NSTimer*)timer
 {
@@ -107,6 +158,30 @@ float heightNotify;
 	[UIView animateWithDuration:ANIMATE_DURATION
 					 animations:^{
 						 [view setFrame:CGRectMake(0, self.frame.size.height + heightNotify, view.frame.size.width, view.frame.size.height)];
+					 }
+					 completion:^(BOOL finished){
+						 [view removeFromSuperview];
+					 }];
+}
+
+- (void)hideNotify_DIRECTION_LEFT_TO_RIGHT:(NSTimer*)timer
+{
+	UIView* view = timer.userInfo;
+	[UIView animateWithDuration:ANIMATE_DURATION
+					 animations:^{
+						 [view setFrame:CGRectMake(0 - self.frame.size.width, 0, view.frame.size.width, view.frame.size.height)];
+					 }
+					 completion:^(BOOL finished){
+						 [view removeFromSuperview];
+					 }];
+}
+
+- (void)hideNotify_DIRECTION_RIGHT_TO_LEFT:(NSTimer*)timer
+{
+	UIView* view = timer.userInfo;
+	[UIView animateWithDuration:ANIMATE_DURATION
+					 animations:^{
+						 [view setFrame:CGRectMake(self.frame.size.width, 0, view.frame.size.width, view.frame.size.height)];
 					 }
 					 completion:^(BOOL finished){
 						 [view removeFromSuperview];
