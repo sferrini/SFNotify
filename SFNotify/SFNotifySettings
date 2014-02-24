@@ -1,0 +1,38 @@
+//
+//  SFNotifySettings
+//  SFNotify
+//
+//  Created by Simone Ferrini on 22/02/14.
+//  Copyright (c) 2014 Simone Ferrini. All rights reserved.
+//
+
+//Default settings:
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+#define DEFAULT_COLOR_BACKGROUND    [UIColor colorWithRed:.93f green:.78f blue:.29f alpha:.9]
+
+#define MAX_MESSAGE_LINES           999
+
+#define PADDING_X                   10.0
+#define PADDING_Y                   10.0
+
+#define DEFAULT_TEXT_COLOR          [UIColor whiteColor]
+#define DEFAULT_FONT                [UIFont systemFontOfSize:16.0]
+
+#define DEFAULT_TIME_DURATION       2.0
+#define ANIMATE_DURATION            .3
+
+#define DEFAULT_DIRECTION           0
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+
+
+//You can choose the direction:
+//------------------------------------
+//-----
+#define DIRECTION_TOP_TO_BOTTOM     1
+#define DIRECTION_BOTTOM_TO_TOP     2
+//-----
+//------------------------------------
