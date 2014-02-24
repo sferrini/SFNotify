@@ -26,7 +26,9 @@
 - (IBAction)SFNotify:(id)sender
 {
 #warning - Use this to notify:
-    [self.view notify:@"This is the:\nSFNotify" //Change the text
+    NSString *message = [NSString stringWithFormat:@"This is the:\nSFNotify"];  //Change the text
+    
+    [self.view notify:message
         withDirection:DEFAULT_DIRECTION
   withBackgroundColor:DEFAULT_COLOR_BACKGROUND
              withFont:DEFAULT_FONT
@@ -34,7 +36,9 @@
          withDuration:DEFAULT_TIME_DURATION];
     
 #warning - Use this to create a custom notify:
-//    [self.view notify:@"This is the custom:\nSFNotify\n\nFeel free to modify whatever you want"
+//    NSString *customMessage = [NSString stringWithFormat:@"This is the custom:\nSFNotify\n\nFeel free to modify whatever you want"];  //Change the text
+//    
+//    [self.view notify:customMessage
 //        withDirection:DIRECTION_LEFT_TO_RIGHT  //Custom direction
 //  withBackgroundColor:[UIColor blackColor] //Custom notify background color
 //             withFont:[UIFont fontWithName:@"menlo" size:12] //Custom font
