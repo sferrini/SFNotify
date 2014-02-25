@@ -7,7 +7,16 @@ Based off [andreamazz / UIView-Notify](https://github.com/andreamazz/UIView-Noti
 
 Install
 --------------------
-* Copy the folder ```SFNotify``` to your project.
+
+* Manually:
+Copy the folder ```SFNotify``` to your project.
+
+
+* CocoaPods: Add the following line to your Podfile:
+
+```
+pod 'SFNotify'
+```
 
 Usage
 --------------------
