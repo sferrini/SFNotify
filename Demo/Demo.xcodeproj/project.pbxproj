@@ -22,7 +22,6 @@
 		FC1FC03918BBA15F004FB746 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC1FC03718BBA15F004FB746 /* InfoPlist.strings */; };
 		FC1FC03B18BBA15F004FB746 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1FC03A18BBA15F004FB746 /* DemoTests.m */; };
 		FC1FC04818BBA328004FB746 /* SFNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1FC04618BBA328004FB746 /* SFNotify.m */; };
-		FC1FC04918BBA328004FB746 /* SFNotifySettings in Resources */ = {isa = PBXBuildFile; fileRef = FC1FC04718BBA328004FB746 /* SFNotifySettings */; };
 		FCAD426818BBD2BD00863825 /* DEFAULT.gif in Resources */ = {isa = PBXBuildFile; fileRef = FCAD426518BBD2BD00863825 /* DEFAULT.gif */; };
 		FCAD426918BBD2BD00863825 /* DIRECTION_BOTTOM_TO_TOP.gif in Resources */ = {isa = PBXBuildFile; fileRef = FCAD426618BBD2BD00863825 /* DIRECTION_BOTTOM_TO_TOP.gif */; };
 		FCAD426A18BBD2BD00863825 /* DIRECTION_LEFT_TO_RIGHT.gif in Resources */ = {isa = PBXBuildFile; fileRef = FCAD426718BBD2BD00863825 /* DIRECTION_LEFT_TO_RIGHT.gif */; };
@@ -60,7 +59,6 @@
 		FC1FC03A18BBA15F004FB746 /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
 		FC1FC04518BBA328004FB746 /* SFNotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNotify.h; sourceTree = "<group>"; };
 		FC1FC04618BBA328004FB746 /* SFNotify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNotify.m; sourceTree = "<group>"; };
-		FC1FC04718BBA328004FB746 /* SFNotifySettings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SFNotifySettings; sourceTree = "<group>"; };
 		FCAD426518BBD2BD00863825 /* DEFAULT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DEFAULT.gif; sourceTree = "<group>"; };
 		FCAD426618BBD2BD00863825 /* DIRECTION_BOTTOM_TO_TOP.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DIRECTION_BOTTOM_TO_TOP.gif; sourceTree = "<group>"; };
 		FCAD426718BBD2BD00863825 /* DIRECTION_LEFT_TO_RIGHT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DIRECTION_LEFT_TO_RIGHT.gif; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 			children = (
 				FC1FC04518BBA328004FB746 /* SFNotify.h */,
 				FC1FC04618BBA328004FB746 /* SFNotify.m */,
-				FC1FC04718BBA328004FB746 /* SFNotifySettings */,
 			);
 			name = SFNotify;
 			path = ../../SFNotify;
@@ -268,7 +265,6 @@
 				FCAD426918BBD2BD00863825 /* DIRECTION_BOTTOM_TO_TOP.gif in Resources */,
 				FC1FC02318BBA15F004FB746 /* Main.storyboard in Resources */,
 				FCAD426818BBD2BD00863825 /* DEFAULT.gif in Resources */,
-				FC1FC04918BBA328004FB746 /* SFNotifySettings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
