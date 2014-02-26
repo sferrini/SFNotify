@@ -1,6 +1,8 @@
 SFNotify
 =============
 
+[![Build Status](https://travis-ci.org/sferrini/SFNotify.png?branch=master)](https://travis-ci.org/sferrini/SFNotify)
+
 Simple custom user notifications
 
 Based off [andreamazz / UIView-Notify](https://github.com/andreamazz/UIView-Notify)
