@@ -47,4 +47,6 @@
 
 - (void)notify:(NSString *)message withDirection:(int)direction withBackgroundColor:(UIColor*)color withFont:(UIFont*)font withTextColor:(UIColor*)textColor withDuration:(float)duration;
 
+- (void)notify:(NSString *)message withDirection:(int)direction withBackgroundColor:(UIColor *)color withFont:(UIFont *)font withTextColor:(UIColor *)textColor withDuration:(float)duration andOnTouch:(void (^)(void))touchBlock;
+
 @end
