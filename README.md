@@ -51,6 +51,28 @@ Import ```SFNotify.h```
 
 ```
 
+* Notification with specified event on touch
+
+```		objc
+NSString *yourMessage = [NSString stringWithFormat:@"This is the:\nSFNotify"];  //Change the text
+    
+    [self.view notify:yourMessage
+        withDirection:DEFAULT_DIRECTION
+        withBackgroundColor:DEFAULT_COLOR_BACKGROUND
+        withFont:DEFAULT_FONT
+        withTextColor:DEFAULT_TEXT_COLOR
+        withDuration:DEFAULT_TIME_DURATION
+        andOnTouch:^{
+             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SFNotify"
+                                                        message:@"Notification view was touched!"
+                                                        delegate:nil
+                                                        cancelButtonTitle:@"OK"
+                                                        otherButtonTitles:nil, nil];
+               [alert show];
+           }];
+
+```
+
 Screen
 --------------------
 
@@ -59,3 +81,5 @@ Screen
 ![Demo DIRECTION_BOTTOM_TO_TOP](https://raw.github.com/sferrini/SFNotify/master/Demo/Demo/Screen/DIRECTION_BOTTOM_TO_TOP.gif)
 
 ![Demo DIRECTION_LEFT_TO_RIGHT](https://raw.github.com/sferrini/SFNotify/master/Demo/Demo/Screen/DIRECTION_LEFT_TO_RIGHT.gif)
+
+![Demo TOUCH_CALLBACK]
