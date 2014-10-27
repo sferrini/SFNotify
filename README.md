@@ -82,4 +82,4 @@ Screen
 
 ![Demo DIRECTION_LEFT_TO_RIGHT](https://raw.github.com/sferrini/SFNotify/master/Demo/Demo/Screen/DIRECTION_LEFT_TO_RIGHT.gif)
 
-![Demo TOUCH_CALLBACK]
+![Demo TOUCH_CALLBACK](https://raw.github.com/oduwa/SFNotify/master/Demo/Demo/Screen/notificationObjC.gif)
