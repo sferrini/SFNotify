@@ -10,6 +10,7 @@
 
 float heightNotify;
 float widthNotify;
+void (^onTouch)(void);
 
 @implementation UIView (SFNotify)
 
@@ -24,6 +25,33 @@ float widthNotify;
     //Slide in
     [self slideInNotify:notify withDirection:direction withDuration:duration];
     
+}
+
+- (void)notify:(NSString *)message withDirection:(int)direction withBackgroundColor:(UIColor *)color withFont:(UIFont *)font withTextColor:(UIColor *)textColor withDuration:(float)duration andOnTouch:(void (^)(void))touchBlock
+{
+    //Create notify
+    UIView *notify = [self viewForMessage:message
+                      withBackgroundColor:color
+                                 withFont:font
+                            withTextColor:textColor];
+    
+    // Assign on touch block to specify what happens when notify view is touched
+    onTouch = touchBlock;
+    
+    // Create gesture recognizer to detect touch
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(invokeTouchBlock)];
+    
+    // Add gesture recognizer to notify view
+    [notify addGestureRecognizer:tapRecognizer];
+    
+    //Slide in
+    [self slideInNotify:notify withDirection:direction withDuration:duration];
+}
+
+#pragma mark - Gesture Recognizer Selector
+- (void) invokeTouchBlock
+{
+    onTouch();
 }
 
 #pragma mark - Slide in

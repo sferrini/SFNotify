@@ -33,7 +33,15 @@
   withBackgroundColor:DEFAULT_COLOR_BACKGROUND
              withFont:DEFAULT_FONT
         withTextColor:DEFAULT_TEXT_COLOR
-         withDuration:DEFAULT_TIME_DURATION];
+         withDuration:DEFAULT_TIME_DURATION
+           andOnTouch:^{
+               UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SFNotify"
+                                                               message:@"Notification view was touched!"
+                                                              delegate:nil
+                                                     cancelButtonTitle:@"OK"
+                                                     otherButtonTitles:nil, nil];
+               [alert show];
+           }];
     
 #warning - Use this to create a custom notify:
 //    NSString *yourCustomMessage = [NSString stringWithFormat:@"This is the custom:\nSFNotify\n\nFeel free to modify whatever you want"];  //Change the text
